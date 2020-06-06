@@ -30,17 +30,20 @@
                 <!--<div class="col-xs-12 col-md-4 ">
                     <a href="#reserveForm" role="button" class="btn btn-lg btn-info mt-4" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>   -->
-                <div class="col-xs-12 col-md-4 ">
+                <!-- <div class="col-xs-12 col-md-4 ">
                     <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-lg btn-info mt-4" >Reserve Campsite</a>
-                </div>    
+                </div>     -->
+                 <div class="col-xs-12 col-md-4 ">
+                    <a role="button" id="reserveButton" class="btn btn-lg btn-info mt-4" >Reserve Campsite</a>
+                </div>
             </div>  
         </div>
     </header>
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg mx-auto" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info">
-                    <h3 class="modal-title text-white">Reserve a Campsite</h3>
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -97,8 +100,11 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <!-- <a role="button" data-toggle="modal" data-target="#loginModal">
                         <i class="fa fa-sign-in"> </i> Login</i>
+                    </a> -->
+                     <a role="button"  id="loginButton">
+                        <i class="fa fa-sign-in text-white"> </i> Login</i>
                     </a>
 
                 </span>
@@ -111,7 +117,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close btn-primary text-light" data-dismiss="modal" >&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
